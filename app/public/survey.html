@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take the Survey!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/09ebdd6c74.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+</head>
+<body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="title">
+			<h1>Survey Questions.</h1>
+			<hr>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="aboutYou">
+			<h2>About You.</h2>
+			<h3>Name (required):</h3>
+			<input type="text" id="name" class="form-control" required>
+
+			<h3>Link to photo (required):</h3>
+			<input type="text" id="photoLink" class="form-control" required>
+			<hr>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="questions">
+			<h2>Question 1:</h2>
+			<h3>Do you mind piles of extra cheese on your pizza?</h3>
+			<select class="form-control" id="q1">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h2>Question 2:</h2>
+			<h3>Do you like to listen to heavey metal at high volumes?</h3>
+			<select class="form-control" id="q2">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h2>Question 3:</h2>
+			<h3>Do you agree to feed the hamster if I ever purchase one?</h3>
+			<select class="form-control" id="q3">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h2>Question 4:</h2>
+			<h3>Do you like to sing songs about mud?</h3>
+			<select class="form-control" id="q4">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h2>Question 5:</h2>
+			<h3>Do you mind me refering to everything as a dink?</h3>
+			<select class="form-control" id="q5">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h2>Question 6:</h2>
+			<h3>Do you mind eating pizza twice in one day?</h3>
+			<select class="form-control" id="q6">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h2>Question 7:</h2>
+			<h3>Do you mind nerf wars?</h3>
+			<select class="form-control" id="q7">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h2>Question 8:</h2>
+			<h3>Do you mind hunting for BigFoot?</h3>
+			<select class="form-control" id="q8">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h2>Question 9:</h2>
+			<h3>Do you object to mooning mean people?</h3>
+			<select class="form-control" id="q9">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h2>Question 10:</h2>
+			<h3>Will you always remeber my love for ice cream?</h3>
+			<select class="form-control" id="q10">
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+			<br>
+			<button id="submit" type="button" class="btn btn-primary btn-lg btn-block " data-toggle="modal" data-target="#myModal"><i class=fa fa-grav" aria-hidden="true"></i> Submit</button>
+			<hr>
+		</div>
+	</div>
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+   
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center">Your best friend is!!</h4>
+      </div>
+      <div class="text-center" id="modal-body">
+        <h4  id="modalText"></h4>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/markverbeck/FriendFinder" target="_blank">GitHub Repo</a></p>
+		</div>
+	</div>
+</div>  <img src="">
+
+</body>
+<script type="text/javascript">
+ var totalDifferences = [];
+	$("#submit").on("click", function(event){
+		event.preventDefault();
+		var newFriend = {
+			name: $("#name").val().trim(),
+			photo: $("#photoLink").val().trim(),
+			score: [parseFloat($("#q1").val().trim()), parseFloat($("#q2").val().trim()), parseFloat($("#q3").val().trim()),parseFloat($("#q4").val().trim()), parseFloat($("#q5").val().trim()), parseFloat($("#q6").val().trim()), parseFloat($("#q7").val().trim()), parseFloat($("#q8").val().trim()), parseFloat($("#q9").val().trim()),
+				parseFloat($("#q10").val().trim())]
+		};
+		var currentURL = window.location.origin;
+		$.ajax({url: currentURL + "/api/friends", method: "GET"})
+		.done(function(tableData){
+			for (var i = 0; i < tableData.length; i++) {
+				var tableD = tableData[i].score;
+				compare(tableD, newFriend.score);
+			}
+
+			var min = Math.min.apply(Math, totalDifferences);
+			for (var i = 0; i < totalDifferences.length; i++) {
+				if(totalDifferences[i] === min){
+					var picture = "<img src='" + tableData[i].photo + "'>";
+					var friendPic = "<hr><br><img src='" + newFriend.photo + "'>";
+					$("#modalText").append(tableData[i].name);
+					$("#modal-body").append(picture);
+					$("#modal-body").append(friendPic);
+
+
+				}
+			}
+		});
+
+		$.post(currentURL + "/api/friends", newFriend);
+
+
+		$("#name").val("");
+		$("#photoLink").val("");
+		$("#q1").val("");
+		$("#q2").val("");
+		$("#q3").val("");
+		$("#q4").val("");
+		$("#q5").val("");
+		$("#q6").val("");
+		$("#q7").val("");
+		$("#q8").val("");
+		$("#q9").val("");
+		$("#q10").val("");
+
+
+	});
+
+	var compare = function(data1, data2){
+		var comparisons = []
+		for (var i = 0; i < data2.length; i++) {
+					var compare = Math.abs(data1[i] - data2[i]);
+					comparisons.push(compare);
+				}
+		var reduce = comparisons.reduce(getSum);
+		totalDifferences.push(reduce);
+
+	};
+
+	function getSum(total, num) {
+    return total + num;
+	};
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

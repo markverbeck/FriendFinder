@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Friend Finder!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/09ebdd6c74.js"></script>
+	<style type="text/css">
+		#title {
+			border-bottom: solid lightgrey 1px;
+			margin-bottom: 2%;
+		}
+
+		#title2 {
+			margin-bottom: 2%;
+		}
+		h2 {
+			margin-bottom: 3%;
+		}
+		#survey {
+			padding: 2%;
+			font-size: 22px;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <div id="title"><h1 id="title2"><i class="fa fa-facebook-official" aria-hidden="true"></i> Friend Finder</h1></div> 
+    <h2>Answer a few basic questions.</h2> 
+  	<h2>Then find the friend with the greatest compatibility!</h2> 
+  	<a href="/survey"><button id="survey" type="button" class="btn btn-primary btn-lg"><i class="fa fa-bars" aria-hidden="true"></i> Go to Survey</button></a>
+  </div>
+ 
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/markverbeck/FriendFinder" target="_blank">GitHub Repo</a></p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
